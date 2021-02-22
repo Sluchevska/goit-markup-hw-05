@@ -109,6 +109,9 @@ ul {
 
 .site-nav .current {
   position: relative;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current:hover.current::after {
@@ -119,8 +122,17 @@ ul {
   width: 100%;
   height: 4px;
 
-  background: #2196f3;
+  background-color: #2196f3;
   border-radius: 2px;
+  transition-property: background-color;
+  transition-duration: 1250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .kont {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .kont:hover,
@@ -143,6 +155,10 @@ ul {
   margin-right: 10px;
 
   fill: #757575;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav .smartphone {
@@ -151,6 +167,10 @@ ul {
   height: 16px;
 
   fill: #757575;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone,
@@ -158,6 +178,10 @@ ul {
   display: flex;
 
   align-items: center;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav .email:hover,
@@ -234,6 +258,42 @@ ul {
 
   border-radius: 4px;
   background-color: var(--accent-color);
+}
+
+.primary-btn:hover,
+.primary-btn:focus {
+  transform: scale(1.55);
+}
+
+.closebtn:hover,
+.closebtn:focus {
+  transform: scale(1.55);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+
+  background-color: #ffffff;
 }
 
 /*Advantages*/
@@ -451,13 +511,26 @@ ul {
   display: flex;
 
   border-radius: 50%;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-box:hover,
 .soc-box:focus {
   color: var(--hero-color);
 
-  background: var(--accent-color);
+  background-color: var(--accent-color);
+}
+
+.insta,
+.twit,
+.linkd,
+.face {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-box:hover .twit,
@@ -496,6 +569,10 @@ ul {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   outline: none;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo1,
@@ -505,6 +582,10 @@ ul {
 .logo5,
 .logo6 {
   fill: #afb1b8;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-focus:hover,
@@ -603,6 +684,10 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot-media {
@@ -667,6 +752,10 @@ ul {
   letter-spacing: 0.03em;
 
   border: none;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-box .item:last-child {
@@ -759,6 +848,10 @@ img {
   display: block;
   text-decoration: none;
   outline: none;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cards:hover,
