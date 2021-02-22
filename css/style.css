@@ -114,7 +114,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current:hover.current::after {
+.current::after {
   position: absolute;
   top: 76px;
   content: "";
@@ -124,9 +124,10 @@ ul {
 
   background-color: #2196f3;
   border-radius: 2px;
-  transition-property: background-color;
-  transition-duration: 1250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  opacity: 1;
 }
 
 .site-nav .kont {
@@ -262,12 +263,12 @@ ul {
 
 .primary-btn:hover,
 .primary-btn:focus {
-  transform: scale(1.55);
+  transform: scale(1.25);
 }
 
 .closebtn:hover,
 .closebtn:focus {
-  transform: scale(1.55);
+  transform: scale(1.25);
 }
 
 .backdrop {
@@ -806,16 +807,24 @@ img {
 
 .text-hover-box {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: -46%;
+  right: 0;
+  overflow: hidden;
   width: 370px;
   height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
+  /* transform: translateY(calc(-50% + 30px)); */
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cards:hover .text-hover-box {
   opacity: 1;
+  transition-duration: 250ms;
+  transform: translateY(-99.9%);
 }
 
 .text-hover {
