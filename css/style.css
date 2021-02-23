@@ -124,9 +124,7 @@ ul {
 
   background-color: #2196f3;
   border-radius: 2px;
-  /* transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+
   opacity: 1;
 }
 
@@ -788,7 +786,6 @@ img {
 }
 
 .project-box .item {
-  position: relative;
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
@@ -805,26 +802,29 @@ img {
   border: 1px solid #eeeeee;
 }
 
+.proj-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
 .text-hover-box {
   position: absolute;
-  bottom: -46%;
+  top: 0;
   right: 0;
-  overflow: hidden;
+
   width: 370px;
   height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
-  /* transform: translateY(calc(-50% + 30px)); */
+  transform: translateY(100%);
 
   transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cards:hover .text-hover-box {
   opacity: 1;
-  transition-duration: 250ms;
-  transform: translateY(-99.9%);
+  transform: translateY(0);
 }
 
 .text-hover {
