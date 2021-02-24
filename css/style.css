@@ -274,12 +274,12 @@ ul {
   margin-top: 8px;
   margin-left: 490px;
   border-radius: 50%;
-  background: #ffffff;
+  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .vector {
-  fill: black;
+  fill: #000000;
 }
 
 .closebtn:hover,
