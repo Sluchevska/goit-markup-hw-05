@@ -112,6 +112,7 @@ ul {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--accent-color);
 }
 
 .current::after {
@@ -278,10 +279,6 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.vector {
-  fill: #000000;
-}
-
 .closebtn:hover,
 .closebtn:focus {
   transform: scale(1.25);
@@ -312,6 +309,11 @@ ul {
   min-height: 581px;
 
   background-color: #ffffff;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+  fill: var(--accent-color);
 }
 
 /*Advantages*/
